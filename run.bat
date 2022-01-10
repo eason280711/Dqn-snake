@@ -1,2 +1,2 @@
-call conda activate venv
+call conda activate dqn-snake
 python DQN.py

@@ -181,12 +181,13 @@ def run_snake():
         cnt += 1
     agent.save('model/Final_model')
         
+os.system('python init.py')
 print('continue')
 print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
 print('--------------------------------------')
-time.sleep(2)
 t = threading.Thread(target=job)
 t.start()
+time.sleep(2)
 run_snake()
 os.system('taskkill /f /im sn.exe')
 
